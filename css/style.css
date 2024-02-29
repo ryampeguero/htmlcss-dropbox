@@ -26,6 +26,11 @@ h1 {
     font-size: 3rem;
     font-weight: 700;
 }
+
+h2 {
+    font-size: 2rem;
+    font-weight: 400;
+}
 /* COMMON */
 .container-large {
     width: 70%;
@@ -68,9 +73,22 @@ h1 {
     display: flex;
      
 }
+
 .flex-end {
     display: flex;
+    justify-content: flex-end;
 }
+
+
+.item-title {
+    width: 100%;
+    border: 1px solid black;
+}
+
+.item-radio {
+    width: 25%;
+}
+
 .wrap {
     flex-wrap: wrap;
 }
@@ -141,6 +159,11 @@ h1 {
 
 .flex li a{
     padding: 10px;
+}
+
+.flex li a:hover {
+    color: #0061FF;
+    /* border-bottom: 1px solid black; */
 }
 
 .flex ul {
