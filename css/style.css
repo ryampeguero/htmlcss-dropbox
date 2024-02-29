@@ -6,10 +6,11 @@
 
 body {
     font-family: 'Open Sans', sans-serif;
+    font-size: 1rem;
 }
 
 img {
-    max-width: 100%;
+    /* max-width: 100%; */
 }
 
 ul {
@@ -21,6 +22,10 @@ a {
     color: gray;
 }
 
+h1 {
+    font-size: 3rem;
+    font-weight: 700;
+}
 /* COMMON */
 .container-large {
     width: 70%;
@@ -46,11 +51,14 @@ a {
 
 /* BUTTONS */
 .btn {
-    width: 10px;
-    height: 10px;
+    /* display: block; */
+    padding: .5em 1em;
+    text-align: center;
+
+    /* width: 80px; */
     /* border-radius: 10px; */
     color: white;
-    background-color: blue;
+    background-color: #0061FF;
 }
 
 /* UTILITIES */
@@ -81,6 +89,14 @@ a {
 /* PADDING & MARGIN */
 .m-t-80 {
     margin-top: 80px;
+}
+
+.p-40 {
+    padding: 20px;
+}
+
+.p-t-150 {
+   padding-top: 60px;
 }
 
 /* BG-COLORS */
@@ -132,6 +148,30 @@ a {
 }
 
 /* MAIN */
+.hero {
+    width: 100%;
+    background-color: #B4D0E7;
+    /* debug */
+    min-height: 420px;
+}
+
+.hero-text p{
+    margin: 20px 0;
+}
+
+.hero-image {
+   position: relative;
+}
+
+.hero-image img{
+    position: absolute;
+    top: 85px;
+    left: 0;
+
+    width: 100%;
+    
+ }
+
 .col-100 {
     width: 100%;
     
@@ -174,7 +214,7 @@ a {
 .col-large {
     width: 60%;
     /* debug */
-    min-height: 4   00px;
+    min-height: 400px;
     border: 1px solid black;
     background-color: blue;
 }
