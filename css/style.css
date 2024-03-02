@@ -74,6 +74,21 @@ h2 {
 
 /* UTILITIES */
 
+/* TEXT STYLE */
+
+.text-center {
+    text-align: center;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.bold {
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
 /* FLEX */
 .flex {
     display: flex;
@@ -83,6 +98,14 @@ h2 {
 .flex-end {
     display: flex;
     justify-content: flex-end;
+}
+
+.space-between {
+    justify-content: space-between;
+}
+
+.grow-1 {
+    flex-grow: 1;
 }
 
 .stretch {
@@ -108,12 +131,7 @@ h2 {
     width: 25%;
 }
 
-
-
-.space-between {
-    justify-content: space-between;
-}
-
+/* POSITION */
 .relative {
     position: relative;
 }
@@ -144,6 +162,55 @@ h2 {
     background-color: pink;
 }
 
+/* CARD */
+.card {
+    display: flex;
+    flex-wrap: wrap;
+
+    /* text-align: center; */
+    
+}
+
+.title {
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+.secondary-title {
+    font-size: 0.9rem;
+    color: gray;
+}
+
+.card-item {
+    /* line-height: 50px; */
+    padding: 10px;
+}
+
+.card-item span{
+    line-height: 50px;
+    /* debug */
+    /* border: 1x solid black; */
+}
+
+.card-item ul {
+    font-size: 0.9rem;
+}
+
+.card-item div {
+    margin: 50px 0;
+    /* debug */
+    border: 1px solid black;
+}
+
+.c-title {
+    font-size: 1.2;
+    font-weight: 600;
+}
+
+.checkmark {
+    color: #0061FF;
+    font-size: 1.2rem;
+}
 
 
 /* HEADER */
@@ -185,6 +252,7 @@ h2 {
 .flex ul {
     justify-content: flex-end;
 }
+
 
 /* MAIN */
 .hero {
@@ -231,6 +299,18 @@ h2 {
     background-color: orange  ;
 }
 
+.col-50 {
+    width: calc(100% / 2);
+    margin-top: 80px;
+    margin-bottom: 80px;
+    border: 1px solid gray;
+
+    /* debug */
+    min-height: 100px;
+    /* border: 1px solid black;
+    background-color: lightgray; */
+}
+
 .col-30 {
     width: calc(100% / 3 - 10px * 3);
     margin-top: 80px;
@@ -242,6 +322,7 @@ h2 {
     /* border: 1px solid black;
     background-color: lightgray; */
 }
+
 
 .col-30-small {
     width: calc(100% / 3 - 10px * 3);
@@ -257,7 +338,7 @@ h2 {
 .col-large {
     width: 60%;
     /* debug */
-    min-height: 400px;
+    /* min-height: 400px; */
     /* border: 1px solid black;
     background-color: blue; */
 }
@@ -268,61 +349,6 @@ h2 {
     min-height: 400px;
     /* border: 1px solid black;
     background-color: lightgreen; */
-}
-
-
-/* CARD */
-.card {
-    display: flex;
-    flex-wrap: wrap;
-
-    /* text-align: center; */
-    
-}
-
-.title {
-    font-size: 1.2rem;
-    font-weight: 600;
-}
-
-.secondary-title {
-    font-size: 0.9rem;
-    color: gray;
-}
-
-.text-center {
-    text-align: center;
-}
-
-.card-item {
-    /* line-height: 50px; */
-    padding: 10px;
-}
-
-.card-item span{
-    line-height: 50px;
-    /* debug */
-    /* border: 1x solid black; */
-}
-
-.card-item ul {
-    font-size: 0.9rem;
-}
-
-.card-item div {
-    margin: 50px 0;
-    /* debug */
-    border: 1px solid black;
-}
-
-.c-title {
-    font-size: 1.2;
-    font-weight: 600;
-}
-
-.checkmark {
-    color: #0061FF;
-    font-size: 1.2rem;
 }
 
 /* LOGO SECTION */
