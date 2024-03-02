@@ -10,7 +10,7 @@ body {
 }
 
 img {
-    /* max-width: 100%; */
+    max-width: 100%;
 }
 
 ul {
@@ -86,13 +86,21 @@ h2 {
 
 .bold {
     font-weight: 600;
-    font-size: 0.9rem;
+}
+
+.small-text {
+    font-size: 0.8rem;
 }
 
 /* FLEX */
 .flex {
     display: flex;
-     
+    flex-direction: row;
+}
+
+.flex-col {
+    display: flex;
+    flex-direction: column;
 }
 
 .flex-end {
@@ -146,8 +154,24 @@ h2 {
     padding: 40px;
 }
 
+.p-t-30 {
+    padding-top: 30px;
+}
+
 .p-t-150 {
-   padding-top: 60px;
+    padding-top: 60px;
+ }
+ 
+.p-tb-80 {
+    padding: 80px 40px;
+}
+
+.m-b-40 {
+    padding-bottom: 50px;
+}
+
+.border {
+    border: 1px solid black;
 }
 
 /* BG-COLORS */
@@ -302,7 +326,7 @@ h2 {
 .col-50 {
     width: calc(100% / 2);
     margin-top: 80px;
-    margin-bottom: 80px;
+    
     border: 1px solid gray;
 
     /* debug */
