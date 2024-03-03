@@ -81,6 +81,17 @@ h2 {
 }
 /* UTILITIES */
 
+.dropdown {
+    display: none;
+    position: relative;
+    padding: 5px;
+    z-index: 1;
+}
+
+.special:hover .dropdown{
+    display: block;
+}
+
 /* TEXT STYLE */
 .center {
   display: block;
@@ -192,6 +203,12 @@ h2 {
 
 .border {
     border: 1px solid black;
+}
+
+.border-tb {
+    margin: 15px 0;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
 }
 
 /* BG-COLORS */
