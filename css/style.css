@@ -34,7 +34,7 @@ h2 {
 /* COMMON */
 /* DEBUG */
 [class*="col"] {
-    border: 1px dashed blue;
+    /* border: 1px dashed blue; */
 }
 
 .container-large {
@@ -75,6 +75,12 @@ h2 {
 /* UTILITIES */
 
 /* TEXT STYLE */
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
 
 .text-center {
     text-align: center;
@@ -96,6 +102,13 @@ h2 {
 .flex {
     display: flex;
     flex-direction: row;
+}
+
+.flex-center {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
 
 .flex-col {
@@ -177,6 +190,42 @@ h2 {
 /* BG-COLORS */
 .green {
     background-color: green;
+}
+/* LOGO-COLORS */
+/* Designit */
+.d-color {
+    background-color: #D1E9CD;
+}
+.d-color1 {
+    background-color: #A2D39B;
+}
+/* ASU */
+.asu-color {
+    background-color: #61082B;
+}
+/* UF */
+.uf-color {
+    background-color: #0093CE;
+}
+/* TOPPS */
+.topps-color {
+    background-color: #FF1C1C;
+}
+/* WBR */
+.wbr-color {
+    background-color: #D5001F;
+}
+/* LONELY */
+.lon-color {
+    background-color: #0D2481;
+}
+/* HEARTS */
+.heart-color {
+    background-color: #B4D0E7;
+}
+/* CLEAR CHANNEL */
+.clear-color {
+    background-color: #FFD830;
 }
 
 .orange {
@@ -316,21 +365,22 @@ h2 {
 
 .col-100-b {
     width: 100%;
-    
+    height: 100%;
     /* debug */
-    height: 300px;
-    border: 1px solid black;
-    background-color: orange  ;
+    /* height: 300px; */
+    /* border: 1px solid black; */
+    /* background-color: orange  ; */
 }
 
 .col-50 {
     width: calc(100% / 2);
-    margin-top: 80px;
-    
+    /* margin-top: 80px; */
+    padding: 10px;
+    flex-shrink: 0;
     border: 1px solid gray;
 
     /* debug */
-    min-height: 100px;
+    /* min-height: 100px; */
     /* border: 1px solid black;
     background-color: lightgray; */
 }
@@ -385,8 +435,11 @@ h2 {
 
 .col-square {
     width: calc(100% / 3);
+    aspect-ratio: 1/1;
+    height: calc(100% / 3);
+    
     /* debug */
-    height: 380px;
+    /* height: 380px; */
     border: 1px solid black;
     background-color: aquamarine;
 }
@@ -396,6 +449,10 @@ h2 {
     background-color: beige;
 }
 
+.logo {
+    filter: invert(100%) sepia(0%) saturate(7500%) hue-rotate(128deg) brightness(107%) contrast(101%);
+    width: 50%;
+}
 /* FOOTER */
 
 footer {
