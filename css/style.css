@@ -17,11 +17,6 @@ ul {
     list-style-type: none;
 }
 
-.nav-banner a {
-    text-decoration: none;
-    color: gray;
-}
-
 h1 {
     font-size: 3rem;
     font-weight: 700;
@@ -34,7 +29,7 @@ h2 {
 /* COMMON */
 /* DEBUG */
 [class*="col-100"] {
-    border: 1px solid black;
+    /* border: 1px solid black; */
 }
 
 .container-large {
@@ -78,6 +73,12 @@ h2 {
     text-decoration: none; 
     color: #61082B;
     background-color: white;
+}
+
+.btn:hover, .btn-white:hover {
+    filter: brightness(1.2);
+    
+    /* border-bottom: 1px solid black; */
 }
 /* UTILITIES */
 
@@ -163,7 +164,6 @@ h2 {
 /* ITEMS */
 .item-title {
     width: 100%;
-    border: 1px solid black;
 }
 
 .item-radio {
@@ -203,6 +203,10 @@ h2 {
 
 .border {
     border: 1px solid black;
+}
+
+.border-gray {
+    border: 1px solid lightgray;
 }
 
 
@@ -263,6 +267,12 @@ h2 {
 
 }
 
+.card-title {
+    padding: 5px 0;
+    text-align: center;
+    border-bottom: 1px solid lightgray;
+}
+
 .title {
     font-size: 1.3rem;
     font-weight: 600;
@@ -274,7 +284,7 @@ h2 {
 }
 
 .card-item {
-    /* line-height: 50px; */
+    /* border: 1px solid gray; */
     padding: 10px;
 }
 
@@ -291,7 +301,7 @@ h2 {
 .card-item div {
     margin: 50px 0;
     /* debug */
-    border: 1px solid black;
+    /* border: 1px solid black; */
 }
 
 .c-title {
@@ -313,32 +323,56 @@ h2 {
     top: 0;
     left: 0;
     z-index: 9999;
-    padding: 10px;
+    /* padding: 10px; */
     
     background-color: white;
     border-bottom: 1px solid rgba(0,0,0,.2);
     /* debug */
+    min-height: 15vh;
     /* min-height: 5vh;
     border: 1px solid black; */
 }
 
 .nav-items {
     
-    padding: 20px 5px;
+    /* margin: 20px 5px; */
     /* debug */
     /* width: calc(100% / 3); */
     /* min-height: 100%; */
     /* border: 1px solid black; */
 }
 
+.nav-banner a {
+    text-decoration: none;
+    color: gray;
+    /* padding: 10vh 0; */
+    /* border: 1px solid black; */
+}
+
+.nav-banner a.btn {
+    text-decoration: none;
+    color: white;
+}
+
+.flex a >img{
+    border: 1px solid black;
+    padding: 5px;
+}
 
 .flex li a{
+    display: block;
+    /* min-height   : 15vh; */
     padding: 10px;
+    border: 1px solid black;
 }
 
 .flex li a:hover {
     color: #0061FF;
     /* border-bottom: 1px solid black; */
+}
+
+.nav-banner a.btn:hover {
+    color:white;
 }
 
 .flex ul {
@@ -408,7 +442,7 @@ h2 {
     width: calc(100% / 3 - 10px * 3);
     margin-top: 80px;
     margin-bottom: 80px;
-    border: 1px solid gray;
+    /* border: 1px solid gray; */
 
     /* debug */
     /* min-height: 9000px; */
@@ -422,7 +456,7 @@ h2 {
     margin-top: 40px;
     margin-bottom: 40px;
     /* debug */
-    min-height: 300px;
+    /* min-height: 300px; */
     /* border: 1px solid black;
     background-color: lightgray; */
 }
@@ -486,8 +520,8 @@ h2 {
 .question {
     margin: 15px 0;
     padding: 15px;
-    border-top: 1px solid black;
-    border-bottom: 1px solid black;
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
 }
 /* FOOTER */
 
