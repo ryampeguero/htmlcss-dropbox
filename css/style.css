@@ -355,7 +355,7 @@ h2 {
 }
 
 .flex a >img{
-    border: 1px solid black;
+    /* border: 1px solid black; */
     padding: 5px;
 }
 
@@ -363,7 +363,7 @@ h2 {
     display: block;
     /* min-height   : 15vh; */
     padding: 10px;
-    border: 1px solid black;
+    /* border: 1px solid black; */
 }
 
 .flex li a:hover {
